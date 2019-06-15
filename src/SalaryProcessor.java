@@ -3,10 +3,14 @@ import javax.swing.JOptionPane;
 public class SalaryProcessor {
 
 	public static void main(String[] args) {
-		int numSalaries = Integer.parseInt(JOptionPane.showInputDialog("How many salaries?")); // Step 1: Ask the user
-																								// how many salaries
-																								// they would like to
-																								// process
+		int numSalaries = Integer
+				.parseInt(JOptionPane.showInputDialog("How many salaries would you like to process today?")); // Step 1:
+																												// Ask
+																												// the
+																												// user
+		// how many salaries
+		// they would like to
+		// process
 
 		while (numSalaries <= 0) { // Making sure that the first input is valid with this loop
 			numSalaries = Integer.parseInt(JOptionPane.showInputDialog("Error! Enter a positive number!"));
@@ -44,8 +48,6 @@ public class SalaryProcessor {
 //		for (int a = 0; a < 6; a++) {
 //			System.out.println(a);
 //		}
-
-
 
 //Do/While Loop: It will execute the code once, BEFORE checking if the condition is true. It will then repeat the loop as long as the condition is true.
 // 	e.g
